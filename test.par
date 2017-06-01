@@ -3,7 +3,7 @@
 %------------------------------------------
 
 FileNameGalaxies       model
-OutputDir              ./output/
+OutputDir              ./test/
 
 FirstFile                   0
 LastFile					0
