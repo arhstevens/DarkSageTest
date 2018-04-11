@@ -70,27 +70,29 @@ ExponentBin                 1.4     ; The factor in spec ang mom between bins
 SfrEfficiency               0.23
 
 FeedbackReheatingEpsilon    6.0
-FeedbackGasSigma            5.5     ; For SupernovaRecipeOn=1, scales SN feedback based on this density scale [h Msun/pc^2]
+FeedbackGasSigma            2.7     ; For SupernovaRecipeOn=1, scales SN feedback based on this density scale [h Msun/pc^2]
 FeedbackExponent            1.0    ; Exponent for scaled SN feedback (SupernovaRecipeOn=1)
 FeedbackEjectionEfficiency  0.4
 
 ReIncorporationFactor       0.15    ; For ReincorpotationModel=0
 
 CoolingScaleSlope           0.23    ; cf. eq. 18 of Stevens et al. (2017)
-CoolingScaleConst           0.85
+CoolingScaleConst           1.0
 
-RadioModeEfficiency         0.01
+RadioModeEfficiency         0.02
 QuasarModeEfficiency        0.005
-BlackHoleGrowthRate         0.15
+BlackHoleGrowthRate         0.1
 
 H2FractionFactor            1.0    ;Controls the normalisation of the H2/HI calculation if H2prescription=0. (1/h^2 for Fu+10)
 H2FractionExponent          0.92   ;Also controls the H2/HI ratio calculation. (0.92 for Fu+10).
 
-ClumpFactor                 3.0     ; Controls the clump factor which affects H2/HI for H2prescription=1. (1.0 for Fu+13)
+ClumpFactor                 1.0     ; Controls the clump factor which affects H2/HI for H2prescription=1. (1.0 for Fu+13)
 ClumpExponent               0.3     ; Controls the clump factor which affects H2/HI for H2prescription=1. (0.7 for Fu+13)
 
+RadiusWeight                2.0     ; the relative weighting of r90 to r50 in calculating the stellar disc scale radius
+
 QTotMin                     1.0    ;threshold Toomre Q value for instabilities
-GasSinkRate                 0.4
+GasSinkRate                 0.5
 ThetaThresh                 10.0   ;threshold angle for gas and stellar discs to be coplanar
 
 DegPerTdyn                  5.0    ;degrees the gas disc precesses to come in line with stars per dynamical time
@@ -101,15 +103,15 @@ ThresholdSatDisruption      1.0        ;Mvir-to-baryonic mass ratio threshold fo
 AlphaBurst                  0.7     ;normalisation of fraction of gas consumed in a merger starburst
 BetaBurst                   0.56    ;exponent of gas consumed in a merger starburst
 
-Yield                        0.03
-RecycleFraction              0.43    ;fraction of SF mass instantaneously recycled back to cold
-FracZleaveDisk               0.0        ;fraction of metals produced directly to hot component
+Yield                       0.03
+RecycleFraction             0.43    ;fraction of SF mass instantaneously recycled back to cold
+FracZleaveDisk              0.0        ;fraction of metals produced directly to hot component
 
-Reionization_z0              8.0        ;these parameter choices give the best fit to Genedin (2000)...
-Reionization_zr              7.0        ;using the analytic fit of Kravtsov et al. 2004 (ReionizationOn=1)
+Reionization_z0             8.0        ;these parameter choices give the best fit to Genedin (2000)...
+Reionization_zr             7.0        ;using the analytic fit of Kravtsov et al. 2004 (ReionizationOn=1)
 
-EnergySN                     1.0e51    ;energy per supernova
-EtaSN                        5.0e-3    ;supernova efficiency
+EnergySN                    1.0e51    ;energy per supernova
+EtaSN                       5.0e-3    ;supernova efficiency
 
 
 %------------------------------------------
