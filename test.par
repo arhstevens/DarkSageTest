@@ -71,11 +71,19 @@ ExponentBin                 1.4     ; The factor in spec ang mom between bins
 
 SfrEfficiency               0.23
 
+%%%= For SupernovaRecipeOn=1 =%%%
 FeedbackReheatingEpsilon    6.0
 FeedbackGasSigma            2.7     ; For SupernovaRecipeOn=1, scales SN feedback based on this density scale [h Msun/pc^2]
 FeedbackExponent            1.0    ; Exponent for scaled SN feedback (SupernovaRecipeOn=1)
 FeedbackEjectionEfficiency  0.4
-%FeedbackEjectionRatio       0.06666666666666667     ; It's either this or the above dependent on the git branch
+%%%= ======================= =%%%
+
+
+%%%= For SupernovaRecipeOn=3or4 =%%%
+FeedbackReheatCoupling      0.1
+FeedbackEjectCoupling       0.1
+%%%= ========================== =%%%
+
 
 ReIncorporationFactor       0.15    ; For ReincorpotationModel=0
 
