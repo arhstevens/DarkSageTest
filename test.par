@@ -54,6 +54,7 @@ ReincorpotationModel        0       ;0: based on Vvir (same as SAGE); 1: based o
 CoolingExponentialRadiusOn  0       ;0: cooling gas is exponential with j (original model); 1: exponential with radius instead
 MvirDefinition              2       ;Mass definition in the treefiles used for Mvir (default for Millennium should be 2, i.e. M200c)
 AgeStructOut                0       ;Include age structure in output (0 for no, 1 for yes). WARNING: Massively increases size of output!! Recommended for a single snapshot only.
+DelayedFeedbackOn           0       ; Abandon the instantaneous recycling approximation and use the age bins to impose a semi-instantaneous, semi-delayed feedback and metal enrichment treatment (requires N_AGE_BINS to be non-zero, ideally >20).  1 for on, 0 for off.
 
 
 
@@ -82,6 +83,7 @@ FeedbackEjectionEfficiency  0.4
 %%%= For SupernovaRecipeOn=3or4 =%%%
 FeedbackReheatCoupling      0.1
 FeedbackEjectCoupling       0.1
+Ratio_Ia_II                 0.2
 %%%= ========================== =%%%
 
 
