@@ -32,6 +32,7 @@ Omega				0.25
 OmegaLambda			0.75
 BaryonFrac			0.17
 Hubble_h			0.73
+BoxLen          62.5
 
 PartMass			0.0860657
 
