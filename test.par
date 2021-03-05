@@ -56,6 +56,7 @@ CoolingExponentialRadiusOn  0       ;0: cooling gas is exponential with j (origi
 MvirDefinition              2       ;Mass definition in the treefiles used for Mvir (default for Millennium should be 2, i.e. M200c)
 AgeStructOut                0       ;Include age structure in output (0 for no, 1 for yes). WARNING: Massively increases size of output!! Recommended for a single snapshot only.
 DelayedFeedbackOn           0       ; Abandon the instantaneous recycling approximation and use the age bins to impose a semi-instantaneous, semi-delayed feedback and metal enrichment treatment (requires N_AGE_BINS to be non-zero, ideally >20).  1 for on, 0 for off.
+HotGasProfileType           0       ;0: Hot gas assumed to follow a singular isothermal sphere.  1: Hot gas assumed to follow a beta profile of the form described in Stevens et al. (2017)
 
 
 
