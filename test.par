@@ -98,6 +98,7 @@ CoolingScaleConst           1.0
 RadioModeEfficiency         0.02
 QuasarModeEfficiency        0.005
 BlackHoleGrowthRate         0.1
+RadiativeEfficiency         0.1     ; fraction of inertia lost by material accreted onto black holes. ~0.0572 for non-spinning BHs, ~0.321 for maximally spinning BHs
 
 H2FractionFactor            1.0    ;Controls the normalisation of the H2/HI calculation if H2prescription=0. (1/h^2 for Fu+10)
 H2FractionExponent          0.92   ;Also controls the H2/HI ratio calculation. (0.92 for Fu+10).
