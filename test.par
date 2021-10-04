@@ -110,7 +110,6 @@ RadiusWeight                2.0     ; the relative weighting of r90 to r50 in ca
 
 QTotMin                     1.0    ;threshold Toomre Q value for instabilities
 GasSinkRate                 0.5     ; fraction of unstable gas that radially migrates rather than forming stars
-StarSinkRate                0.99   ; fraction of unstable stars that radially migrates rather than being vertically heated
 ThetaThresh                 10.0   ;threshold angle for gas and stellar discs to be coplanar
 
 DegPerTdyn                  5.0    ;degrees the gas disc precesses to come in line with stars per dynamical time
